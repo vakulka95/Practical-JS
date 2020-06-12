@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+
+.wrap{
+    margin: 20px 150px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-left: 15px;
+    padding: 3px 10px;
+}
+
+.sidebar{
+    width: 30%;
+}
+.content{
+    width: 70%;
+}
+
+p{
+    color: red;
+    margin-bottom: 20px;
+}
+
+.switch{
+    padding: 10px;
+}
