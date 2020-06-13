@@ -82,32 +82,126 @@ function showZodiac(){
     month = parseInt(monthInp.value);
     day = parseInt(dayInp.value);
     console.log(day);
-    if( (month === 3 && day <= 21) || (month === 4 && day <= 19) ){
-        zodiac.innerHTML = "Ваш знак зодиака Овен";
-    }else if( (month === 4 && day >= 20) || (month === 5 && day <= 20) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Телец';
-    }else if( (month === 5 && day >= 21) || (month === 6 && day <= 20) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Близнец';
-    }else if( (month === 6 && day >= 21) || (month === 7 && day <= 22) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Рак';
-    }else if( (month === 7 && day >= 23) || (month === 8 && day <= 22) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Лев';
-    }else if( (month === 8 && day >= 23) || (month === 9 && day <= 22) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Дева';
-    }else if( (month === 9 && day >= 23) || (month === 10 && day <= 22) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Весы';
-    }else if( (month === 10 && day >= 23) || (month === 11 && day <= 21) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Скорпион';
-    }else if( (month === 11 && day >= 22) || (month === 12 && day <= 21) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Стрелец';
-    }else if( (month === 12 && day >= 22) || (month === 1 && day <= 19) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Козерог';
-    }else if( (month === 1 && day >= 20) || (month === 2 && day <= 18) ){
-        zodiac.innerHTML = 'Ваш знак зодиака Водолей';
-    }else{
-        zodiac.innerHTML = 'Ваш знак зодиака Рыба';
+
+    if(month === 3){
+        if(day >= 21){
+            zodiac.innerHTML = "Ваш знак зодиака Овен";
+        }
+    }else if(month === 4){
+        if(day <= 19){
+            zodiac.innerHTML = "Ваш знак зодиака Овен";
+        }
     }
     
+    if(month === 4){
+        if(day >= 20){
+            zodiac.innerHTML = 'Ваш знак зодиака Телец';
+        }
+    }else if(month === 5){
+        if(day <= 20){
+            zodiac.innerHTML = 'Ваш знак зодиака Телец';
+        }
+    }
+
+    if(month === 5){
+        if(day >= 21){
+            zodiac.innerHTML = 'Ваш знак зодиака Близнец';
+        }
+    }else if(month === 6){
+        if(day <= 20){
+            zodiac.innerHTML = 'Ваш знак зодиака Близнец';
+        }
+    }
+
+    if(month === 6){
+        if(day >= 21){
+            zodiac.innerHTML = 'Ваш знак зодиака Рак';
+        }
+    }else if(month === 7){
+        if(day <= 22){
+            zodiac.innerHTML = 'Ваш знак зодиака Рак';
+        }
+    }
+
+    if(month === 7){
+        if(day >= 23){
+            zodiac.innerHTML = 'Ваш знак зодиака Лев';
+        }
+    }else if(month === 8){
+        if(day <= 22){
+            zodiac.innerHTML = 'Ваш знак зодиака Лев';
+        }
+    }
+
+    if(month === 8){
+        if(day >= 23){
+            zodiac.innerHTML = 'Ваш знак зодиака Дева';
+        }
+    }else if(month === 9){
+        if(day <= 22){
+            zodiac.innerHTML = 'Ваш знак зодиака Дева';
+        }
+    }
+
+    if(month === 9){
+        if(day >= 23){
+            zodiac.innerHTML = 'Ваш знак зодиака Весы';
+        }
+    }else if(month === 10){
+        if(day <= 22){
+            zodiac.innerHTML = 'Ваш знак зодиака Весы';
+        }
+    }
+
+    if(month === 10){
+        if(day >= 23){
+            zodiac.innerHTML = 'Ваш знак зодиака Скорпион';
+        }
+    }else if(month === 11){
+        if(day <= 12){
+            zodiac.innerHTML = 'Ваш знак зодиака Скорпион';
+        }
+    }
+
+    if(month === 11){
+        if(day >= 22){
+            zodiac.innerHTML = 'Ваш знак зодиака Стрелец';
+        }
+    }else if(month === 12){
+        if(day <= 21){
+            zodiac.innerHTML = 'Ваш знак зодиака Стрелец';
+        }
+    }
+
+    if(month === 12){
+        if(day >= 22){
+            zodiac.innerHTML = 'Ваш знак зодиака Козерог';
+        }
+    }else if(month === 1){
+        if(day <= 19){
+            zodiac.innerHTML = 'Ваш знак зодиака Козерог';
+        }
+    }
+
+    if(month === 1){
+        if(day >= 20){
+            zodiac.innerHTML = 'Ваш знак зодиака Водолей';
+        }
+    }else if(month === 2){
+        if(day <= 18){
+            zodiac.innerHTML = 'Ваш знак зодиака Водолей';
+        }
+    }
+
+    if(month === 2){
+        if(day >= 19){
+            zodiac.innerHTML = 'Ваш знак зодиака Рыба';
+        }
+    }else if(month === 3){
+        if(day <= 20){
+            zodiac.innerHTML = 'Ваш знак зодиака Рыба';
+        }
+    }
 }
 
 // Task 5
