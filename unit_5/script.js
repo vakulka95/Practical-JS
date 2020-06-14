@@ -31,5 +31,4 @@ word.insertAdjacentHTML('afterend', ' after end text ');
 
 let hi = document.querySelector('.hi');
 
-// hi.outerHTML = '<b>Hi</b>';
 hi.outerText = '<b>Hi</b>';

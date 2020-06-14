@@ -1,4 +1,24 @@
 // Task 1 - 2;
+let input = document.querySelector('.text-input');
+let pass = document.querySelector('.pass-input');
+let range1 = document.querySelector('.range-input');
+let date = document.querySelector('.date-input');
+let button = document.querySelector('.push-btn');
+let check = document.querySelector('.checkbox-input');
+let radio = document.querySelector('.radio-btn')
+button.onclick = () => {
+    console.log(input.value);
+    console.log(pass.value);
+    console.log(range1.value);
+    console.log(date.value);
+    if(check.checked){
+        console.log('Yes');
+    }else{
+        console.log('No');
+    }
+    console.log(radio.checked);
+}
+
 let text = document.querySelector('.text');
 let body = document.querySelector('body');
 
