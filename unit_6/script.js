@@ -31,3 +31,37 @@ range.oninput = () => {
     let rangeInput = document.querySelector('.range-value');
     rangeInput.value = range.value;
 }
+
+// Task 5
+
+let color1 = document.querySelector('.color1');
+let color2 = document.querySelector('.color2');
+let color3 = document.querySelector('.color3');
+let out1 = document.querySelector('.color1-out');
+out1.style.width = '30px';
+out1.style.height = '30px';
+let out2 = document.querySelector('.color2-out');
+out2.style.width = '30px';
+out2.style.height = '30px';
+let out3 = document.querySelector('.color3-out');
+out3.style.width = '30px';
+out3.style.height = '30px';
+
+let colorBlock = document.querySelector('.color-block');
+colorBlock.style.width = '300px';
+colorBlock.style.height = '300px';
+colorBlock.style.marginTop = '30px';
+
+color1.oninput = changeColor;
+color2.oninput = changeColor;
+color3.oninput = changeColor;
+
+
+function changeColor(){
+    out1.style.backgroundColor = `rgba(${color1.value}, 0, 0)`;
+    out2.style.backgroundColor = `rgba(0, ${color2.value}, 0)`;
+    out3.style.backgroundColor = `rgba(0, 0, ${color3.value})`;
+    colorBlock.style.backgroundColor = `rgba(${color1.value}, ${color2.value}, ${color3.value})`;
+}
+
+
