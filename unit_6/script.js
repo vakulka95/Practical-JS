@@ -18,7 +18,16 @@ let def = document.querySelector('.default-btn').onclick = () => {
 
 let range = document.querySelector('.size');
 
+
 let sizeBtn = document.querySelector('.size-btn').onclick = () => {
     
     text.style.fontSize = `${range.value}px`;
+}
+
+
+// Task 4
+
+range.oninput = () => {
+    let rangeInput = document.querySelector('.range-value');
+    rangeInput.value = range.value;
 }
