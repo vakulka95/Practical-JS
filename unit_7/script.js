@@ -47,6 +47,12 @@ function raising(){
     let parsed_2 = parseInt(degree.value);
     let out = document.querySelector('.out_5');
     out.innerHTML = parsed_1** parsed_2;
+}
 
+// Task 6
+
+for(let i = 1; i < 10; i++){
+    let out = document.querySelector('.out_6');
+    out.innerHTML += `7 * ${i} = ${7 * i} <br>`;
 }
 
