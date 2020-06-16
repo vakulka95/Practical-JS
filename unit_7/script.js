@@ -121,3 +121,44 @@ let zodiac = document.querySelector('.zodiac-btn').onclick = () => {
     }
 };
 
+
+// Task 11
+
+let span = document.querySelectorAll('span');
+
+for(let i = 0; i < span.length; i++){
+    span[i].style.backgroundColor = 'yellow';
+}
+
+// Task 12
+
+let quontity = document.querySelectorAll('p');
+for(let i = 0; i < quontity.length; i++){
+    let out11 = document.querySelector('.out_11');
+    out11.style.margin = '30px';
+    out11.innerHTML = `Колличество параграфов на странице: ${i}`;
+}
+
+
+// Task 13
+
+const arr = [1, 0, 0, 0, 0];
+
+let out13 = document.querySelector('.out_13');
+let moveBtn = document.querySelector('.move-btn').addEventListener('click', move);
+out13.innerHTML = arr;
+
+let a = 0;
+
+function move(){
+    arr[a+1] = 1;
+    a++
+    arr[a-1] = 0;
+    if( arr[arr.length-1] === 1 ){
+        arr.length = 5;
+    }
+    out13.innerHTML = arr;
+}
+
+
+
