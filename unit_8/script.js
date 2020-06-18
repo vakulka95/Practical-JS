@@ -13,12 +13,12 @@ block.onselectstart = () => {
 block.ondblclick = () => {
   alert('hello')
 }
-
+// Task 2
 document.oncontextmenu = () => {
     return false;
 }
 
-// Task 2
+// Task 3
 let block2 = document.querySelector('.block2');
 block2.style.backgroundImage = "url('img/close.png')";
 block2.style.backgroundRepeat = "no-repeat";
@@ -35,3 +35,4 @@ block2.onmouseleave = () => {
 block2.style.backgroundRepeat = "no-repeat";
 }
 
+// Task 4
