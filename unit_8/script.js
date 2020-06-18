@@ -36,3 +36,38 @@ block2.style.backgroundRepeat = "no-repeat";
 }
 
 // Task 4
+
+let task4 = document.querySelector('.task4');
+task4.style.display = 'flex';
+task4.style.justifyContent = 'space-around';
+
+let block3_1 = document.querySelector('.block3-1');
+block3_1.style.width = '300px';
+block3_1.style.height = '300px';
+block3_1.style.border = '3px solid #000'
+let block3_2 = document.querySelector('.block3-2');
+block3_2.style.width = '300px';
+block3_2.style.height = '300px';
+block3_2.style.border = '3px solid #000'
+let block3_3 = document.querySelector('.block3-3');
+block3_3.style.width = '300px';
+block3_3.style.height = '300px';
+block3_3.style.border = '3px solid #000'
+
+function getColor(){
+   let r = Math.floor(Math.random() * 256);
+   let g = Math.floor(Math.random() * 256);
+   let b = Math.floor(Math.random() * 256);
+
+   return`rgba(${r}, ${g}, ${b})`;
+}
+
+block3_1.onmouseenter = () => {
+    block3_1.style.backgroundColor = getColor();
+}
+block3_2.onmouseenter = () => {
+    block3_2.style.backgroundColor = getColor();
+}
+block3_3.onmouseenter = () => {
+    block3_3.style.backgroundColor = getColor();
+}
